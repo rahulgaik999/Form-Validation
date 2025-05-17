@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation with js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <header></header>
+
+            <h1>Sign Up</h1>
+            <main class="signup-form">
+
+                <form action="#">
+                    <p>
+                        <label for="Full Name">Full Name</label>
+                        <input type="text" placeholder="Enter Name" id="name">
+                        <!-- <i class="fa-solid" id="validation-icon"></i> -->
+                        <span id="name_error"></span>
+                    </p>
+                    <p>
+                        <label for="Email">Enter Email</label>
+                        <input type="email" placeholder="xyz@gmail.com" id="email">
+                    <p> <i class="fa-solid"></i></p>
+                    <span id="email_error"></span>
+                    </p>
+                    <p>
+                        <label for="Enter Password">Password</label>
+                        <input type="password" placeholder="at least 8 character" id="pass1">
+                        <span id="password_error"></span>
+
+                    </p>
+                    <p>
+                        <label for="Enter Password"></label>
+                        <input type="password" placeholder="Confirm Password" id="pass2">
+                        <span id="password_error2"></span>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Create Account" id="submit">
+                    </p>
+
+
+
+                </form>
+
+            </main>
+            <footer>
+                <p>Already Have a Account? <a href="">Login</a></p>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
